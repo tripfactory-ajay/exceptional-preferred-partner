@@ -28,7 +28,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
   display:flex;align-items:center;padding:0 32px;height:62px;
 }
 .hub-logo{display:flex;align-items:center;gap:12px;margin-right:28px;flex-shrink:0;}
-.hub-logo img{height:40px;width:auto;background:#fff;border-radius:4px;padding:2px 5px;}
+.hub-logo img{height:40px;width:auto;background:#fff;border-radius:6px;padding:4px 8px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
 .logo-div{width:1px;height:30px;background:var(--border);}
 .logo-text{font-family:'Playfair Display',serif;font-size:15px;color:var(--navy);line-height:1.2;}
 .logo-sub{font-size:10px;color:var(--sub);letter-spacing:.7px;text-transform:uppercase;}
@@ -374,7 +374,6 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
     <button class="nav-tab"        onclick="show('policies',this)">&#128214; Policies</button>
     <button class="nav-tab"        onclick="show('tripped',this)">&#127891; Trip-Ed Training <span style='font-size:10px;opacity:.65;'>(Demo Data)</span></button>
     <button class="nav-tab"        onclick="show('legal',this)">&#9878;&#65039; Legal Review</button>
-    <button class="nav-tab"        onclick="show('area',this)">&#127758; Area &amp; Radius</button>
     <button class="nav-tab"        onclick="show('downloads',this)">&#128229; Downloads</button>
   </div>
   <div class="nav-right"><span class="nav-badge">EPP Programme v1.0</span></div>
@@ -443,7 +442,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
       <div class="ch">&#128274; Key Obligations — All EPP Partners</div>
       <p>The following obligations are binding on every EPP from the date of signing the EPP Agreement and remain in force for the duration of the Agreement and, where specified, beyond termination.</p>
     </div>
-    <div class="g3">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px;">
       <div class="card">
         <div class="ci">&#128272;</div>
         <div class="ct">System Access &amp; Login Security</div>
@@ -469,6 +468,29 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
         <div class="ct">Data Protection &amp; Confidentiality</div>
         <div class="cb">All data collected or handled by the EPP in connection with ORN Vacations PTE — including customer data, pricing information, booking records, and proprietary business data — must be fully protected and must not be shared outside of the company or with any third party without the prior written approval of ORN Vacations PTE. All data handling must comply with applicable data protection law.</div>
       </div>
+    </div>
+
+    <div class="sl" style="margin-top:28px;">Territory &amp; Area Rights</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:16px;">
+      <div class="card">
+        <div class="ci">&#128205;</div>
+        <div class="ct">Defined Territory</div>
+        <div class="cb">Each EPP is appointed to a defined geographic area at on-boarding. Territory and radius boundaries are documented in Schedule A of the EPP Agreement, taking into account population, sales infrastructure, and market opportunity.</div>
+      </div>
+      <div class="card">
+        <div class="ci">&#127937;</div>
+        <div class="ct">Market Share Priority</div>
+        <div class="cb">Within your defined radius, ORN Vacations gives your EPP business first opportunity to serve leads and clients — enabling you to build <strong>considerable and dominant market share</strong> before any further appointments are made in that territory.</div>
+      </div>
+      <div class="card">
+        <div class="ci">&#128101;</div>
+        <div class="ct">No Sub-Agents Without Approval</div>
+        <div class="cb">Territory rights are held exclusively by the named EPP. Sub-agents or representatives may not be appointed within or beyond the defined area without prior written approval from ORN Vacations PTE. Area rights are conditional on active trading and meeting performance thresholds.</div>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-bottom:0;">
+      <div class="ch">&#9888; Area Rights Are Conditional &#8212; Not Absolute Exclusivity</div>
+      <p>ORN Vacations commits to giving the EPP first opportunity in their defined territory. This is not a guarantee of exclusivity. ORN Vacations retains the right to sell directly and appoint additional partners where demand cannot be serviced by the existing EPP.</p>
     </div>
   </div>
 </div>
@@ -626,24 +648,37 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
     <div class="sl">Credit Facility</div>
     <div class="credit">
       <div class="cr-l">
-        <h2>4&#215; Your Security Deposit</h2>
-        <p>Lodge a Security Deposit with TripFactory and access a Credit Limit equal to 4 times that amount. Confirm bookings as soon as the Customer&#8217;s deposit arrives &#8212; without waiting for their full balance payment.</p>
+        <h2>2&#215; to 4&#215; Your Security Deposit</h2>
+        <p>Lodge a Security Deposit with ORN Vacations and access a Credit Limit starting from 2&#215; up to 4&#215; that amount. Confirm bookings as soon as the Customer&#8217;s deposit arrives &#8212; without waiting for their full balance payment.</p>
         <div class="cr-formula">
           <div class="cf-p"><div class="cf-n">&#8377;X</div><div class="cf-l">Security Deposit</div></div>
           <div class="cf-op">&#215;</div>
-          <div class="cf-p"><div class="cf-n" style="color:var(--gold)">4</div><div class="cf-l">Multiplier</div></div>
+          <div class="cf-p"><div class="cf-n" style="color:var(--gold)">2&#215;&#8211;4&#215;</div><div class="cf-l">Multiplier</div></div>
           <div class="cf-op">=</div>
           <div class="cf-p"><div class="cf-n" style="color:#4ade80">&#8377;4X</div><div class="cf-l">Credit Limit</div></div>
         </div>
       </div>
       <div>
         <div style="font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px;">Examples</div>
+        <div style="font-size:10px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:10px;">Multiplier Options — Starting from 2&#215;</div>
         <div class="cr-egs">
-          <div class="cr-eg"><div class="cr-eg-d">Deposit <strong>&#8377;50,000</strong></div><div class="cr-eg-arrow">&#8594;</div><div class="cr-eg-lim">&#8377;2,00,000 limit</div></div>
-          <div class="cr-eg"><div class="cr-eg-d">Deposit <strong>&#8377;1,00,000</strong></div><div class="cr-eg-arrow">&#8594;</div><div class="cr-eg-lim">&#8377;4,00,000 limit</div></div>
-          <div class="cr-eg"><div class="cr-eg-d">Deposit <strong>&#8377;2,50,000</strong></div><div class="cr-eg-arrow">&#8594;</div><div class="cr-eg-lim">&#8377;10,00,000 limit</div></div>
+          <div class="cr-eg" style="border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px 14px;margin-bottom:8px;">
+            <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px;">2&#215; Multiplier</div>
+            <div class="cr-eg-d">Deposit <strong>&#8377;50,000</strong></div><div class="cr-eg-arrow">&#8594;</div><div class="cr-eg-lim">&#8377;1,00,000 limit</div>
+            <div style="margin-top:4px;font-size:11px;color:rgba(255,255,255,.4);">Also: &#8377;1L &#8594; &#8377;2L &nbsp;|&nbsp; &#8377;2.5L &#8594; &#8377;5L</div>
+          </div>
+          <div class="cr-eg" style="border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:10px 14px;margin-bottom:8px;">
+            <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px;">3&#215; Multiplier</div>
+            <div class="cr-eg-d">Deposit <strong>&#8377;50,000</strong></div><div class="cr-eg-arrow">&#8594;</div><div class="cr-eg-lim">&#8377;1,50,000 limit</div>
+            <div style="margin-top:4px;font-size:11px;color:rgba(255,255,255,.4);">Also: &#8377;1L &#8594; &#8377;3L &nbsp;|&nbsp; &#8377;2.5L &#8594; &#8377;7.5L</div>
+          </div>
+          <div class="cr-eg" style="border:1px solid rgba(201,150,42,.4);border-radius:8px;padding:10px 14px;background:rgba(201,150,42,.08);">
+            <div style="font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px;">4&#215; Multiplier &#9733; Best Value</div>
+            <div class="cr-eg-d">Deposit <strong>&#8377;50,000</strong></div><div class="cr-eg-arrow">&#8594;</div><div class="cr-eg-lim">&#8377;2,00,000 limit</div>
+            <div style="margin-top:4px;font-size:11px;color:rgba(255,255,255,.4);">Also: &#8377;1L &#8594; &#8377;4L &nbsp;|&nbsp; &#8377;2.5L &#8594; &#8377;10L</div>
+          </div>
         </div>
-        <div class="cr-note">&#9888; The Credit Facility is not a loan. You remain solely responsible for collecting and remitting all Customer balances to TripFactory by the due date.</div>
+        <div class="cr-note">&#9888; The Credit Facility is not a loan. You remain solely responsible for collecting and remitting all Customer balances to ORN Vacations by the due date.</div>
       </div>
     </div>
   </div>
@@ -660,122 +695,172 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
 </div>
 <div id="section-legal" class="hub-section">
   <div class="pw">
-    <div class="sl" style="margin-top:8px;">Hoshiarpur Franchise (2022) vs EPP v1.0 (2026)</div>
-    <div class="callout warn" style="margin-bottom:24px;"><div class="ch">&#9878;&#65039; Privileged &amp; Confidential &#8212; Internal Use Only</div><p>This comparison is prepared for internal planning purposes. It does not constitute legal advice. Recommended amendments must be reviewed by qualified Indian legal counsel before implementation.</p></div>
-    <div class="sl">Structural Model Comparison</div>
-    <div class="cmp-g">
-      <div class="cmp-card">
-        <div class="cmp-hdr hosh"><h3>Hoshiarpur Franchise Agreement</h3><p>ORN Vacations &#183; Sanchit Jain &#183; 10 January 2022</p></div>
-        <div class="cmp-body">
-          <div class="cmp-r"><span class="cmp-lbl">Partner Type</span><span class="cmp-val">Investor / local facilitator</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Who Runs Business</span><span class="cmp-val">TripFactory operates the store</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Payment Direction</span><span class="cmp-val">TF pays franchisee &#8377;40k/month</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Commission</span><span class="cmp-val worse">0.25% of total turnover</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Security Deposit</span><span class="cmp-val worse">&#8377;25 Lakhs &#8212; mandatory upfront</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Term</span><span class="cmp-val">5 years + 5-year lock-in</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Non-Solicitation</span><span class="cmp-val">5 years post-termination</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Training Obligations</span><span class="cmp-val worse">None specified</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Data Protection</span><span class="cmp-val worse">No DPDPA reference</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Arbitrator</span><span class="cmp-val worse">Appointed by Company alone</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">GST Provisions</span><span class="cmp-val worse">Not addressed</span></div>
+    <div class="sl" style="margin-top:8px;">EPP Agreement — Gaps &amp; New Agreement</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+
+      <!-- LEFT: GAPS HIGHLIGHTED -->
+      <div>
+        <div style="background:rgba(204,51,0,.06);border:1px solid rgba(204,51,0,.2);border-radius:var(--r);overflow:hidden;">
+          <div style="background:var(--red);padding:16px 20px;display:flex;align-items:center;gap:10px;">
+            <div style="font-size:20px;">&#10060;</div>
+            <div>
+              <div style="font-weight:700;color:#fff;font-size:14px;">Gaps &amp; Issues Identified</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.7);">Items missing or needing amendment in the current draft</div>
+            </div>
+          </div>
+          <div style="padding:16px 20px;">
+
+            <div style="border-left:3px solid var(--red);padding:10px 14px;margin-bottom:12px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">1. No Minimum Initial Period</strong>
+                <span style="background:var(--red);color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">HIGH</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">EPP can currently exit on 90 days&#8217; notice from Day 1. No protection for ORN Vacations&#8217; onboarding investment. <strong>Fix: Add 12-month minimum lock-in.</strong></div>
+            </div>
+
+            <div style="border-left:3px solid var(--red);padding:10px 14px;margin-bottom:12px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">2. Non-Solicitation Too Short</strong>
+                <span style="background:var(--red);color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">HIGH</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">Currently only 12 months post-termination. Insufficient to protect ORN Vacations&#8217; customer relationships. <strong>Fix: Extend to 24 months.</strong></div>
+            </div>
+
+            <div style="border-left:3px solid #c9962a;padding:10px 14px;margin-bottom:12px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">3. No Cross-Default Clause</strong>
+                <span style="background:#c9962a;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">MEDIUM</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">Breach of any other ORN Vacations agreement by EPP does not currently constitute a breach of this Agreement. <strong>Fix: Add cross-default clause (Clause 25.10).</strong></div>
+            </div>
+
+            <div style="border-left:3px solid #c9962a;padding:10px 14px;margin-bottom:12px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">4. No Mutual Warranties</strong>
+                <span style="background:#c9962a;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">MEDIUM</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">No dedicated warranties clause. Both parties should warrant legal capacity, licences held, no conflicting obligations, and no undisclosed insolvency proceedings. <strong>Fix: Add Clause 8.</strong></div>
+            </div>
+
+            <div style="border-left:3px solid #c9962a;padding:10px 14px;margin-bottom:12px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">5. LOI / Prior Agreement Not Preserved</strong>
+                <span style="background:#c9962a;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">MEDIUM</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">Entire agreement clause currently supersedes all prior communications. Any signed LOI is wiped out. <strong>Fix: Add carve-out in Clause 25.1 for LOIs expressly stated to survive.</strong></div>
+            </div>
+
+            <div style="border-left:3px solid #6b7280;padding:10px 14px;margin-bottom:12px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">6. PIN Code Attribution Unclear</strong>
+                <span style="background:#6b7280;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">LOW</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">Territory/PIN code attribution model not addressed. Could lead to future commission disputes. <strong>Fix: Clarify or retire in Schedule A.</strong></div>
+            </div>
+
+            <div style="border-left:3px solid #6b7280;padding:10px 14px;background:#fff;border-radius:0 6px 6px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                <strong style="font-size:13px;">7. Stamp Duty Not State-Specific</strong>
+                <span style="background:#6b7280;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.5px;">LOW</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);line-height:1.6;">Clause 25.7 says &#8220;adequate value&#8221; — correct but vague. Under-stamping renders agreement inadmissible in court. <strong>Fix: Create internal state-by-state Stamp Duty reference table.</strong></div>
+            </div>
+
+          </div>
         </div>
       </div>
-      <div class="cmp-card">
-        <div class="cmp-hdr epp"><h3>EPP Agreement v1.0</h3><p>TripFactory &#183; Independent Travel Agent &#183; 2026</p></div>
-        <div class="cmp-body">
-          <div class="cmp-r"><span class="cmp-lbl">Partner Type</span><span class="cmp-val better">Independent travel agent / agency</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Who Runs Business</span><span class="cmp-val better">EPP runs own business independently</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Payment Direction</span><span class="cmp-val">EPP pays ORN &#8377;2k&#8211;5k/month</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Commission</span><span class="cmp-val better">60&#8211;70% of Gross Profit</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Security Deposit</span><span class="cmp-val better">Optional &#8212; for Credit Facility only</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Term</span><span class="cmp-val better">3 years &#183; 90-day exit notice</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Non-Solicitation</span><span class="cmp-val worse">12 months only (see Amendment 2)</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Training Obligations</span><span class="cmp-val better">Mandatory Trip-Ed programme</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Data Protection</span><span class="cmp-val better">Full DPDPA 2023 compliance</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">Arbitrator</span><span class="cmp-val better">Mutually agreed &#8212; fairer</span></div>
-          <div class="cmp-r"><span class="cmp-lbl">GST Provisions</span><span class="cmp-val better">Full GST compliance policy</span></div>
+
+      <!-- RIGHT: NEW EPP AGREEMENT -->
+      <div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);">
+          <div style="background:linear-gradient(135deg,var(--navy),#1e3a5f);padding:16px 20px;display:flex;align-items:center;gap:10px;">
+            <div style="font-size:20px;">&#128220;</div>
+            <div>
+              <div style="font-weight:700;color:#fff;font-size:14px;">EPP Agreement v1.0 — Incorporating All Amendments</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.65);">ORN Vacations PTE &bull; Exceptional Preferred Partner &bull; 2026</div>
+            </div>
+          </div>
+          <div style="padding:20px;">
+
+            <div style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--sub);margin-bottom:10px;">Key Clauses</div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 3 — Term</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; Amended</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">3-year initial term. <strong>Minimum 12-month lock-in period</strong> — no voluntary exit in first 12 months except for ORN Vacations&#8217; material breach. 90-day written notice required thereafter. Termination Fee applies on early exit.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 6 — Commission Structure</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; New Model</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Revenue split based on verified Sales Base established at on-boarding. Opening split <strong>80/20</strong> (ORN/EPP). Improves to <strong>75/25</strong> at 1&#215; growth and <strong>70/30</strong> at 2&#215; and above. Full records access for monitoring.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 8 — Mutual Warranties</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; Added</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Both parties warrant: legal capacity to enter agreement, all required licences held, no conflicting obligations, no undisclosed litigation, no current or pending insolvency proceedings.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 10 — Territory &amp; Area</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; Added</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Defined territory and radius set at on-boarding (Schedule A). EPP holds market share priority in area. No sub-agents without prior written approval. Annual performance review. Area rights conditional on active trading.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 14 — System Access</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; Added</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Login credentials issued exclusively to named EPP. Must not be shared under any circumstances. EPP works exclusively for ORN Vacations PTE. All data protected and not shared outside company without ORN written approval.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 19 — Post-Termination</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; Amended</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Non-compete: 12 months. <strong>Non-solicitation: extended to 24 months</strong> (staff and other EPP Partners). Brand removal within 7 days. All customer data deleted and confirmed in writing.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 23 — Dispute Resolution</strong>
+                <span style="font-size:10px;color:#166534;font-weight:600;background:#f0fdf4;padding:1px 7px;border-radius:10px;">&#10003; Already Correct</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Single arbitrator mutually agreed by both parties. Bangalore seat. Indian Arbitration &amp; Conciliation Act 1996. No company-appointed arbitrator — fairer than Hoshiarpur model.</div>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <strong style="font-size:12.5px;">Clause 25 — General</strong>
+                <span style="font-size:10px;color:var(--teal);font-weight:600;background:#f0fdf9;padding:1px 7px;border-radius:10px;">&#10003; Amended</span>
+              </div>
+              <div style="font-size:12px;color:var(--sub);margin-top:3px;line-height:1.6;">Entire agreement clause amended to preserve signed LOI where expressly stated to survive. <strong>Cross-default added (25.10):</strong> breach of any other ORN Vacations agreement constitutes breach of this Agreement.</div>
+            </div>
+
+            <div style="padding:12px 16px;background:#f0fdf9;border-radius:8px;border:1px solid #86efac;">
+              <div style="font-weight:700;font-size:12px;color:#166534;margin-bottom:4px;">&#10003; DPDPA 2023 &bull; GST Compliance &bull; Mandatory Trip-Ed Training</div>
+              <div style="font-size:11.5px;color:#166534;line-height:1.6;">Full data protection policy incorporated by reference. GST obligations addressed in Schedule B. Mandatory induction before first booking confirmed.</div>
+            </div>
+
+          </div>
+          <div style="padding:12px 20px;border-top:1px solid var(--border);background:var(--off);display:flex;justify-content:space-between;align-items:center;">
+            <div style="font-size:11px;color:var(--sub);">&#9888; This summary does not constitute legal advice. Have the full agreement reviewed by qualified counsel before signing.</div>
+          </div>
         </div>
       </div>
+
     </div>
-    <div class="sl">Coverage Summary</div>
-    <div class="cov-g">
-      <div class="cov-card" style="background:#f0fdf4;border-color:#86efac;"><div class="cov-n">&#10003;</div><div class="cov-t" style="color:#166534;">29 Clauses Covered</div><div class="cov-s">Fully addressed in EPP v1.0</div></div>
-      <div class="cov-card" style="background:rgba(204,51,0,.05);border-color:#fca5a5;"><div class="cov-n">&#10007;</div><div class="cov-t" style="color:#991b1b;">5 Gaps Identified</div><div class="cov-s">Hoshiarpur provisions missing from EPP v2.0</div></div>
-      <div class="cov-card" style="background:#eff6ff;border-color:#93c5fd;"><div class="cov-n">&#127381;</div><div class="cov-t" style="color:#1e40af;">8 New Features</div><div class="cov-s">Major provisions in EPP v1.0 not in Hoshiarpur</div></div>
-    </div>
-    <div class="sl">Recommended Amendments</div>
-    <table class="amend-table">
-      <thead><tr><th>#</th><th>Amendment</th><th>Priority</th><th>Current Position</th><th>Recommended Change</th></tr></thead>
-      <tbody>
-        <tr><td><strong>1</strong></td><td><strong>Add 12-Month Minimum Initial Period</strong><br><small style="color:var(--sub)">Clause 3.1</small></td><td><span class="badge b-hi">HIGH</span></td><td>EPP can exit on 90 days&#8217; notice from Day 1</td><td>Prohibit exit in first 12 months except for TripFactory&#8217;s material breach. Protects TripFactory&#8217;s onboarding investment.</td></tr>
-        <tr><td><strong>2</strong></td><td><strong>Extend Non-Solicitation to 24 Months</strong><br><small style="color:var(--sub)">Clause 19.2</small></td><td><span class="badge b-hi">HIGH</span></td><td>12 months only post-termination</td><td>Increase to 24 months. Provides meaningful protection for TripFactory&#8217;s customer relationships.</td></tr>
-        <tr><td><strong>3</strong></td><td><strong>Arbitrator &#8212; Already Improved &#10003;</strong><br><small style="color:var(--sub)">Clause 23.3</small></td><td><span class="badge b-in">INFO</span></td><td>Mutually agreed &#8212; already correct</td><td>No change needed. EPP v2.0 already improves on Hoshiarpur&#8217;s company-appointed arbitrator. Retain current wording.</td></tr>
-        <tr><td><strong>4</strong></td><td><strong>Add Cross-Default Clause</strong><br><small style="color:var(--sub)">New Clause 25.10</small></td><td><span class="badge b-md">MEDIUM</span></td><td>Not present in EPP v2.0</td><td>Add: breach of any other TripFactory agreement by the EPP = breach of this Agreement.</td></tr>
-        <tr><td><strong>5</strong></td><td><strong>Add LOI / Prior Agreement Carve-out</strong><br><small style="color:var(--sub)">Amend Clause 25.1</small></td><td><span class="badge b-md">MEDIUM</span></td><td>Entire agreement clause supersedes all prior communications</td><td>Add carve-out: signed LOI expressly stated to survive is incorporated by reference.</td></tr>
-        <tr><td><strong>6</strong></td><td><strong>Add Mutual Representations &amp; Warranties</strong><br><small style="color:var(--sub)">New Clause 8</small></td><td><span class="badge b-md">MEDIUM</span></td><td>No dedicated warranties clause</td><td>Add explicit mutual warranties: legal capacity, licences held, no conflicting obligations, no undisclosed litigation, no insolvency proceedings.</td></tr>
-        <tr><td><strong>7</strong></td><td><strong>Clarify App / PIN Code Commission</strong><br><small style="color:var(--sub)">Clause 6.1 or Schedule A</small></td><td><span class="badge b-lo">LOW</span></td><td>Not addressed in EPP v2.0</td><td>Clarify whether TripFactory&#8217;s territory/PIN code attribution model applies. If retired, add Schedule A note to prevent future claims.</td></tr>
-        <tr><td><strong>8</strong></td><td><strong>Stamp Duty Reference Table by State</strong><br><small style="color:var(--sub)">Internal process</small></td><td><span class="badge b-lo">LOW</span></td><td>Clause 25.7 says &#8220;adequate value&#8221; &#8212; correct but vague</td><td>Create internal state-by-state Stamp Duty table. Under-stamping renders the agreement inadmissible as court evidence.</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-<div id="section-area" class="hub-section">
-  <div class="pw">
-    <div class="section-hdr"><h2>Area &amp; Radius</h2><p>Territorial scope and market share provisions for ORN Vacations EPP Partners</p></div>
-    <div class="callout tip" style="margin-bottom:24px;">
-      <div class="ch">&#127758; Exclusive Area Coverage</div>
-      <p>As an EPP Partner, you are granted a defined area and radius within which you hold <strong>considerable market share priority</strong>. This gives existing EPP Partners the scope to build a dominant position in their territory before any additional appointments are considered in that area.</p>
-    </div>
-    <div class="sl">How Area &amp; Radius Works</div>
-    <div class="cards" style="margin-bottom:28px;">
-      <div class="card">
-        <div class="ci">&#128205;</div>
-        <div class="ct">Defined Territory</div>
-        <div class="cb">Each EPP is appointed to a defined geographic area established during on-boarding. The territory is documented in the EPP Agreement Schedule and takes into account population, existing sales infrastructure, and market opportunity.</div>
-      </div>
-      <div class="card">
-        <div class="ci">&#127937;</div>
-        <div class="ct">Market Share Priority</div>
-        <div class="cb">Within your defined radius, ORN Vacations gives your EPP business first opportunity to serve leads and clients. The intention is for each EPP to achieve <strong>considerable and dominant market share</strong> within their territory before further appointments are made.</div>
-      </div>
-      <div class="card">
-        <div class="ci">&#128202;</div>
-        <div class="ct">Monitoring &amp; Review</div>
-        <div class="cb">ORN Vacations will periodically review territorial performance. EPPs who demonstrate strong penetration of their area will be recognised and considered for territory expansion. Underperforming areas may be opened for additional appointments after written notice.</div>
-      </div>
-      <div class="card">
-        <div class="ci">&#128336;</div>
-        <div class="ct">Radius Scope</div>
-        <div class="cb">The radius is set at on-boarding based on geographic and demographic factors. Exact radius boundaries are confirmed in writing by ORN Vacations prior to Agreement signing and form part of the Schedule to the EPP Agreement.</div>
-      </div>
-      <div class="card">
-        <div class="ci">&#128101;</div>
-        <div class="ct">No Sub-Agent Rights</div>
-        <div class="cb">Territory rights are held exclusively by the named EPP. The EPP may not appoint sub-agents, representatives, or associates to operate within or beyond the defined area without ORN Vacations&#8217; prior written approval.</div>
-      </div>
-      <div class="card">
-        <div class="ci">&#128279;</div>
-        <div class="ct">Exclusivity Conditions</div>
-        <div class="cb">Area priority is conditional on the EPP maintaining active operations, meeting agreed minimum performance thresholds, and remaining in good standing under the EPP Agreement. ORN Vacations retains the right to operate directly or appoint others where the EPP is unable to service demand within the territory.</div>
-      </div>
-    </div>
-    <div class="sl">Key Area &amp; Radius Principles</div>
-    <div class="callout warn" style="margin-bottom:16px;">
-      <div class="ch">&#9888; Important: Area Rights Are Conditional</div>
-      <p>Area and radius priority is not an absolute exclusivity guarantee. It is a commitment by ORN Vacations to give the EPP first and primary opportunity in their defined territory, conditional on the EPP actively developing that market. ORN Vacations retains the right to sell directly and to appoint additional partners where genuinely necessary to service demand the current EPP cannot meet.</p>
-    </div>
-    <table style="width:100%;border-collapse:collapse;font-size:13px;">
-      <thead><tr style="background:var(--navy);color:#fff;"><th style="padding:10px 14px;text-align:left;">Principle</th><th style="padding:10px 14px;text-align:left;">Detail</th></tr></thead>
-      <tbody>
-        <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px 14px;font-weight:600;">Territory Definition</td><td style="padding:10px 14px;color:var(--sub);">Set at on-boarding, documented in Schedule A of the EPP Agreement</td></tr>
-        <tr style="border-bottom:1px solid var(--border);background:var(--off);"><td style="padding:10px 14px;font-weight:600;">Radius Type</td><td style="padding:10px 14px;color:var(--sub);">Geographic radius (miles/km) or defined administrative boundaries (county, city, postcode zone)</td></tr>
-        <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px 14px;font-weight:600;">Market Share Goal</td><td style="padding:10px 14px;color:var(--sub);">Considerable and dominant share of ORN Vacations bookings within the defined area</td></tr>
-        <tr style="border-bottom:1px solid var(--border);background:var(--off);"><td style="padding:10px 14px;font-weight:600;">Performance Review</td><td style="padding:10px 14px;color:var(--sub);">Annual territorial performance review with BDM; area may be extended or contracted based on results</td></tr>
-        <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px 14px;font-weight:600;">Sub-Agent Restriction</td><td style="padding:10px 14px;color:var(--sub);">No sub-agent appointments within or beyond the area without prior written ORN Vacations approval</td></tr>
-        <tr style="border-bottom:1px solid var(--border);background:var(--off);"><td style="padding:10px 14px;font-weight:600;">Data Handling in Territory</td><td style="padding:10px 14px;color:var(--sub);">All client data collected within the territory remains ORN Vacations data and must be handled per the EPP Data Protection Policy</td></tr>
-        <tr><td style="padding:10px 14px;font-weight:600;">Dispute Resolution</td><td style="padding:10px 14px;color:var(--sub);">Any territory dispute to be referred to ORN Vacations management in writing; decision is final within the terms of the EPP Agreement</td></tr>
-      </tbody>
-    </table>
   </div>
 </div>
 <div id="section-downloads" class="hub-section">
