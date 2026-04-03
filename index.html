@@ -854,9 +854,159 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
             </div>
 
           </div>
-          <div style="padding:12px 20px;border-top:1px solid var(--border);background:var(--off);display:flex;justify-content:space-between;align-items:center;">
+          <div style="padding:16px 20px;border-top:1px solid var(--border);background:var(--off);display:flex;justify-content:space-between;align-items:center;gap:12px;">
             <div style="font-size:11px;color:var(--sub);">&#9888; This summary does not constitute legal advice. Have the full agreement reviewed by qualified counsel before signing.</div>
+            <button onclick="document.getElementById('agreement-modal').style.display='flex'" style="flex-shrink:0;background:var(--navy);color:#fff;border:none;padding:9px 18px;border-radius:7px;font-size:12.5px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:'Plus Jakarta Sans',sans-serif;white-space:nowrap;">&#128220; View Full Agreement</button>
           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── FULL AGREEMENT MODAL ── -->
+<div id="agreement-modal" style="display:none;position:fixed;inset:0;z-index:5000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:12px;width:100%;max-width:860px;max-height:90vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.3);">
+    
+    <!-- Modal Header -->
+    <div style="background:linear-gradient(135deg,var(--navy),#1e3a5f);padding:20px 28px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">
+      <div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:4px;">ORN Vacations PTE</div>
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:#fff;font-weight:700;">Exceptional Preferred Partner Agreement</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);margin-top:2px;">Version 1.0 &bull; 2026 &bull; Incorporating All Amendments</div>
+      </div>
+      <button onclick="document.getElementById('agreement-modal').style.display='none'" style="background:rgba(255,255,255,.15);border:none;color:#fff;width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;">&#10005;</button>
+    </div>
+
+    <!-- Modal Body -->
+    <div style="overflow-y:auto;padding:28px;flex:1;font-size:13px;line-height:1.8;color:#1f2937;">
+
+      <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:12px 16px;margin-bottom:24px;font-size:12px;color:#92400e;">
+        &#9888; <strong>Privileged &amp; Confidential.</strong> This agreement is for internal review and discussion purposes. It does not constitute a legally binding document until signed by both parties. Obtain qualified legal advice before execution.
+      </div>
+
+      <!-- PARTIES -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin-bottom:18px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">PARTIES</div>
+      </div>
+      <p><strong>ORN Vacations PTE Ltd</strong> ("ORN Vacations", "the Company") — a company incorporated under the laws of Singapore, operating the TripFactory travel platform.</p>
+      <p style="margin-top:8px;"><strong>[EPP Partner Name]</strong> ("the EPP", "Exceptional Preferred Partner") — an independent travel agent or agency operating within the defined Territory.</p>
+
+      <!-- CLAUSE 1 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 1 — DEFINITIONS</div>
+      </div>
+      <p><strong>"Agreement"</strong> means this Exceptional Preferred Partner Agreement including all Schedules.</p>
+      <p style="margin-top:6px;"><strong>"Sales Base"</strong> means the EPP's verified current annual sales figure established during the on-boarding due diligence process and documented in Schedule A.</p>
+      <p style="margin-top:6px;"><strong>"Territory"</strong> means the defined geographic area and radius assigned to the EPP at on-boarding, as set out in Schedule A.</p>
+      <p style="margin-top:6px;"><strong>"Commission"</strong> means the EPP's share of Gross Profit on confirmed bookings as determined by the Revenue Split in Clause 6.</p>
+      <p style="margin-top:6px;"><strong>"Credit Facility"</strong> means the booking credit extended to the EPP as set out in Clause 13, subject to lodgement of a Security Deposit.</p>
+
+      <!-- CLAUSE 2 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 2 — APPOINTMENT</div>
+      </div>
+      <p>ORN Vacations appoints the EPP as a non-exclusive Exceptional Preferred Partner to promote and sell ORN Vacations products within the Territory. This appointment is personal to the EPP and may not be transferred or sub-licensed without ORN Vacations' prior written consent.</p>
+      <p style="margin-top:8px;">ORN Vacations retains the right to appoint other EPP Partners in the same Territory and to sell directly. No exclusivity is granted unless expressly confirmed in writing by ORN Vacations.</p>
+
+      <!-- CLAUSE 3 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 3 — TERM <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">Amended</span></div>
+      </div>
+      <p><strong>3.1 Initial Term:</strong> This Agreement commences on the Effective Date and continues for 3 years ("Initial Term"), subject to automatic renewal unless terminated in accordance with Clause 17.</p>
+      <p style="margin-top:8px;"><strong>3.2 Minimum Period:</strong> The EPP may not voluntarily terminate this Agreement during the first 12 months of the Initial Term ("Minimum Period") except where ORN Vacations has committed a material breach which it has failed to remedy within 30 days of written notice.</p>
+      <p style="margin-top:8px;"><strong>3.3 Exit Notice:</strong> After the Minimum Period, either party may terminate this Agreement by giving 90 days' written notice. A Termination Fee equal to the remaining monthly platform fees for the unexpired Initial Term is payable by the EPP on voluntary early exit.</p>
+      <p style="margin-top:8px;"><strong>3.4 Renewal:</strong> On expiry of the Initial Term, this Agreement renews automatically for successive 12-month periods unless either party gives 90 days' written notice of non-renewal.</p>
+
+      <!-- CLAUSE 6 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 6 — COMMISSION STRUCTURE <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">New Model</span></div>
+      </div>
+      <p><strong>6.1 Sales Base:</strong> As part of on-boarding due diligence, ORN Vacations will establish the EPP's current verified annual sales figure. This figure, documented in Schedule A, constitutes the "Sales Base" and is the starting point for the revenue split.</p>
+      <p style="margin-top:8px;"><strong>6.2 Revenue Split:</strong></p>
+      <table style="width:100%;border-collapse:collapse;margin:10px 0;font-size:12.5px;">
+        <thead><tr style="background:var(--navy);color:#fff;"><th style="padding:8px 12px;text-align:left;">Sales Performance</th><th style="padding:8px 12px;text-align:center;">ORN Vacations</th><th style="padding:8px 12px;text-align:center;">EPP</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px;">At Sales Base</td><td style="padding:8px 12px;text-align:center;font-weight:700;">80%</td><td style="padding:8px 12px;text-align:center;font-weight:700;color:var(--teal);">20%</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--off);"><td style="padding:8px 12px;">1× increase on Sales Base</td><td style="padding:8px 12px;text-align:center;font-weight:700;">75%</td><td style="padding:8px 12px;text-align:center;font-weight:700;color:var(--teal);">25%</td></tr>
+          <tr><td style="padding:8px 12px;">2× and above on Sales Base</td><td style="padding:8px 12px;text-align:center;font-weight:700;">70%</td><td style="padding:8px 12px;text-align:center;font-weight:700;color:var(--teal);">30%</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:8px;"><strong>6.3 Monitoring:</strong> ORN Vacations shall have full access to all company records of the EPP, including financial statements, sales records, customer data, and marketing materials throughout the term, to monitor sales performance and determine applicable commission splits.</p>
+      <p style="margin-top:8px;"><strong>6.4 Payment:</strong> Commission is paid twice monthly on the 15th and last day of each month, by bank transfer, net of applicable TDS under Section 194H of the Income Tax Act 1961.</p>
+
+      <!-- CLAUSE 8 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 8 — MUTUAL WARRANTIES <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">Added</span></div>
+      </div>
+      <p>Each party warrants to the other that, as at the Effective Date and throughout the term: (a) it has full legal capacity and authority to enter into this Agreement; (b) all required licences, registrations, and permits are held and maintained; (c) entry into this Agreement does not conflict with any other obligation; (d) there is no pending or threatened litigation that would materially affect its ability to perform; and (e) it is not subject to any insolvency, bankruptcy, or administration proceedings.</p>
+
+      <!-- CLAUSE 10 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 10 — TERRITORY &amp; AREA RIGHTS <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">Added</span></div>
+      </div>
+      <p><strong>10.1</strong> The EPP is appointed to the Territory set out in Schedule A. ORN Vacations commits to giving the EPP first opportunity to service leads and customers within the Territory before appointing additional partners in that area.</p>
+      <p style="margin-top:8px;"><strong>10.2</strong> Territory rights are conditional on the EPP maintaining active operations and meeting agreed performance thresholds. ORN Vacations reserves the right to appoint additional partners or sell directly where demand within the Territory cannot be serviced by the existing EPP.</p>
+      <p style="margin-top:8px;"><strong>10.3 Sub-Agents:</strong> The EPP may not appoint sub-agents or representatives within or beyond the Territory without prior written approval from ORN Vacations PTE.</p>
+      <p style="margin-top:8px;"><strong>10.4 Annual Review:</strong> Territory boundaries will be reviewed annually. Areas may be extended based on strong performance or contracted where minimum thresholds are not met, with 30 days' written notice.</p>
+
+      <!-- CLAUSE 14 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 14 — SYSTEM ACCESS &amp; EXCLUSIVITY <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">Added</span></div>
+      </div>
+      <p><strong>14.1 Exclusive Use:</strong> Login credentials and system access details issued to the EPP are for the exclusive use of the named EPP only. Credentials must not be shared with any third party including staff, associates, or sub-agents. Unauthorised sharing constitutes a material breach entitling ORN Vacations to terminate immediately.</p>
+      <p style="margin-top:8px;"><strong>14.2 Exclusivity:</strong> The EPP works exclusively for ORN Vacations PTE in the capacity of Exceptional Preferred Partner and may not represent, promote, or act as agent for any competing travel business, tour operator, or holiday provider during the term without prior written consent.</p>
+      <p style="margin-top:8px;"><strong>14.3 Data Protection:</strong> All data collected or handled by the EPP in connection with ORN Vacations — including customer data, pricing, booking records, and proprietary business data — must be fully protected and not shared outside the company without prior written approval from ORN Vacations PTE.</p>
+
+      <!-- CLAUSE 19 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 19 — POST-TERMINATION OBLIGATIONS <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">Amended</span></div>
+      </div>
+      <p><strong>19.1 Non-Compete:</strong> For 12 months following termination, the EPP shall not approach ORN Vacations customers with competing travel products.</p>
+      <p style="margin-top:8px;"><strong>19.2 Non-Solicitation:</strong> For <strong>24 months</strong> following termination, the EPP shall not solicit, recruit, or employ any ORN Vacations staff or other EPP Partners.</p>
+      <p style="margin-top:8px;"><strong>19.3 Brand Removal:</strong> Within 7 days of termination, the EPP must remove all ORN Vacations branding from all digital and physical channels and confirm removal in writing.</p>
+      <p style="margin-top:8px;"><strong>19.4 Data Deletion:</strong> All ORN Vacations customer data must be deleted and deletion confirmed in writing within 7 days of termination.</p>
+
+      <!-- CLAUSE 25 -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">CLAUSE 25 — GENERAL <span style="font-size:11px;background:#fef3f0;color:var(--red);padding:2px 8px;border-radius:10px;margin-left:8px;">Amended</span></div>
+      </div>
+      <p><strong>25.1 Entire Agreement:</strong> This Agreement constitutes the entire agreement between the parties, superseding all prior communications, negotiations, and representations, except where a signed Letter of Intent expressly states it survives and is incorporated by reference herein.</p>
+      <p style="margin-top:8px;"><strong>25.3 Governing Law:</strong> This Agreement is governed by the laws of India, including the Indian Contract Act 1872, DPDPA 2023, and Consumer Protection Act 2019.</p>
+      <p style="margin-top:8px;"><strong>25.4 Arbitration:</strong> Any dispute shall be referred to a single arbitrator mutually agreed by both parties, seated in Bangalore, under the Indian Arbitration &amp; Conciliation Act 1996.</p>
+      <p style="margin-top:8px;"><strong>25.10 Cross-Default:</strong> A material breach by the EPP of any other agreement with ORN Vacations shall constitute a material breach of this Agreement.</p>
+
+      <!-- SCHEDULES -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">SCHEDULES</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:12px 14px;"><div style="font-weight:700;font-size:12px;margin-bottom:3px;">Schedule A</div><div style="font-size:11.5px;color:var(--sub);">EPP Profile, Sales Base, Territory & Radius, Commission Model, Credit Facility Election</div></div>
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:12px 14px;"><div style="font-weight:700;font-size:12px;margin-bottom:3px;">Schedule B</div><div style="font-size:11.5px;color:var(--sub);">GST & Tax Obligations, TDS reference rates, SAC codes</div></div>
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:12px 14px;"><div style="font-weight:700;font-size:12px;margin-bottom:3px;">Schedule C</div><div style="font-size:11.5px;color:var(--sub);">Minimum Sales Targets by period and review dates</div></div>
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:12px 14px;"><div style="font-weight:700;font-size:12px;margin-bottom:3px;">Schedule D</div><div style="font-size:11.5px;color:var(--sub);">EPP Policy Pack v1.0 — all 11 policies incorporated by reference</div></div>
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:12px 14px;grid-column:span 2;"><div style="font-weight:700;font-size:12px;margin-bottom:3px;">Schedule E</div><div style="font-size:11.5px;color:var(--sub);">Stamp Duty — state-by-state reference table (to be inserted before execution)</div></div>
+      </div>
+
+      <!-- SIGNATURES -->
+      <div style="border-bottom:2px solid var(--navy);padding-bottom:8px;margin:24px 0 14px;">
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);">SIGNATURES</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px;">
+        <div style="border:1px solid var(--border);border-radius:8px;padding:16px;">
+          <div style="font-weight:700;font-size:12px;margin-bottom:16px;">For and on behalf of ORN Vacations PTE</div>
+          <div style="border-bottom:1px solid #9ca3af;margin-bottom:6px;height:32px;"></div>
+          <div style="font-size:11px;color:var(--sub);">Authorised Signatory</div>
+          <div style="border-bottom:1px solid #9ca3af;margin:12px 0 6px;height:32px;"></div>
+          <div style="font-size:11px;color:var(--sub);">Date</div>
+        </div>
+        <div style="border:1px solid var(--border);border-radius:8px;padding:16px;">
+          <div style="font-weight:700;font-size:12px;margin-bottom:16px;">EPP Partner</div>
+          <div style="border-bottom:1px solid #9ca3af;margin-bottom:6px;height:32px;"></div>
+          <div style="font-size:11px;color:var(--sub);">EPP Authorised Signatory / Name</div>
+          <div style="border-bottom:1px solid #9ca3af;margin:12px 0 6px;height:32px;"></div>
+          <div style="font-size:11px;color:var(--sub);">Date</div>
         </div>
       </div>
 
@@ -865,45 +1015,56 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text
 </div>
 <div id="section-downloads" class="hub-section">
   <div class="pw">
-    <div class="sl" style="margin-top:8px;">Agreements</div>
-    <div class="dl-g">
-      <div class="dl-card">
-        <div class="dl-icon w">&#128196;</div>
-        <div class="dl-info">
-          <div class="dl-title">EPP Agreement v1.0</div>
-          <div class="dl-sub">Exceptional Preferred Partner Agreement &#8212; 26 Clauses + 5 Schedules &#183; Version 1.0 &#183; 2026</div>
-          <a class="dl-btn" href="PREFERRED_SALES_AGENT_AGREEMENT_V2.docx" download>&#11015; Download Word</a>
-        </div>
-      </div>
-      <div class="dl-card">
-        <div class="dl-icon w">&#128203;</div>
-        <div class="dl-info">
-          <div class="dl-title">EPP Policy Pack v1.0</div>
-          <div class="dl-sub">All 11 Partner Policies &#8212; Brand, Pricing, Complaints, Payment, DPDPA, GST, Trip-Ed, Credit Facility &#183; Version 2.0</div>
-          <a class="dl-btn" href="EPP_Policies_Draft_1.docx" download>&#11015; Download Word</a>
-        </div>
-      </div>
+    <div class="sl" style="margin-top:8px;">EPP Documents</div>
+    <div class="callout tip" style="margin-bottom:20px;">
+      <div class="ch">&#128229; Download Instructions</div>
+      <p>Place all downloaded files in the same folder as this <strong>index.html</strong> file. All links use relative paths and will work automatically when opened from a local folder or deployed to GitHub Pages.</p>
     </div>
-    <div class="sl">Legal Review</div>
     <div class="dl-g">
+
       <div class="dl-card">
-        <div class="dl-icon l">&#9878;&#65039;</div>
+        <div class="dl-icon" style="width:44px;height:44px;background:linear-gradient(135deg,var(--navy),#1e3a5f);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">&#128220;</div>
         <div class="dl-info">
-          <div class="dl-title">Hoshiarpur vs EPP v1.0 &#8212; Legal Review</div>
-          <div class="dl-sub">Structural comparison &#183; 53-clause coverage table &#183; 8 recommended amendments &#183; Privileged &amp; Confidential</div>
-          <a class="dl-btn" href="ORN_Hoshiarpur_vs_EPP_Review.docx" download>&#11015; Download Word</a>
+          <div class="dl-title">EPP Agreement v1.0 <span style="font-size:10px;background:#f0fdf9;color:var(--teal);padding:2px 7px;border-radius:10px;font-weight:600;margin-left:4px;">Latest</span></div>
+          <div class="dl-sub">Exceptional Preferred Partner Agreement &bull; All amendments incorporated &bull; 26 Clauses + 5 Schedules &bull; ORN Vacations PTE &bull; 2026</div>
+          <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;">
+            <button onclick="document.getElementById('agreement-modal').style.display='flex'" style="background:var(--navy);color:#fff;border:none;padding:7px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;display:flex;align-items:center;gap:5px;">&#128065; View Agreement</button>
+            <a class="dl-btn" href="EPP_Agreement_v1.docx" download style="display:flex;align-items:center;gap:5px;">&#11015; Download Word</a>
+          </div>
         </div>
       </div>
+
       <div class="dl-card">
-        <div class="dl-icon w">&#127891;</div>
+        <div class="dl-icon" style="width:44px;height:44px;background:linear-gradient(135deg,var(--teal),#0a6657);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">&#128203;</div>
         <div class="dl-info">
-          <div class="dl-title">Trip-Ed Training Portal (Standalone)</div>
-          <div class="dl-sub">9 modules, destination content, quizzes, and Knowledge Checks &#8212; standalone HTML version</div>
-          <a class="dl-btn" href="index__1_.html" download>&#11015; Download HTML</a>
+          <div class="dl-title">EPP Policy Pack v1.0 <span style="font-size:10px;background:#f0fdf9;color:var(--teal);padding:2px 7px;border-radius:10px;font-weight:600;margin-left:4px;">Latest</span></div>
+          <div class="dl-sub">All 11 Partner Policies &bull; Brand, Pricing, Complaints, Payment, DPDPA 2023, GST, Trip-Ed, Credit Facility &bull; Incorporated by reference into EPP Agreement v1.0</div>
+          <a class="dl-btn" href="EPP_Policies_v1.docx" download style="margin-top:10px;display:inline-flex;align-items:center;gap:5px;">&#11015; Download Word</a>
         </div>
       </div>
+
+      <div class="dl-card">
+        <div class="dl-icon" style="width:44px;height:44px;background:linear-gradient(135deg,#7c3aed,#5b21b6);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">&#9878;&#65039;</div>
+        <div class="dl-info">
+          <div class="dl-title">Legal Review — Gaps &amp; Amendments <span style="font-size:10px;background:#eff6ff;color:#1e40af;padding:2px 7px;border-radius:10px;font-weight:600;margin-left:4px;">Internal Only</span></div>
+          <div class="dl-sub">Hoshiarpur vs EPP v1.0 comparison &bull; 7 gaps identified &bull; All amendments incorporated &bull; Privileged &amp; Confidential &bull; Not for external distribution</div>
+          <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;">
+            <button onclick="show('legal')" style="background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;border:none;padding:7px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;display:flex;align-items:center;gap:5px;">&#128065; View Legal Review</button>
+            <a class="dl-btn" href="EPP_Legal_Review_v1.docx" download style="display:flex;align-items:center;gap:5px;">&#11015; Download Word</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-icon" style="width:44px;height:44px;background:linear-gradient(135deg,var(--red),#e84a20);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">&#127891;</div>
+        <div class="dl-info">
+          <div class="dl-title">EPP Partner Hub <span style="font-size:10px;background:#fef3f0;color:var(--red);padding:2px 7px;border-radius:10px;font-weight:600;margin-left:4px;">This file</span></div>
+          <div class="dl-sub">Complete EPP Hub &bull; All sections, Trip-Ed training, policies, legal review, commission structure &bull; Single HTML file &bull; Works offline</div>
+          <a class="dl-btn" href="EPP_Partner_Hub_v1.html" download style="margin-top:10px;display:inline-flex;align-items:center;gap:5px;background:var(--red);">&#11015; Download HTML</a>
+        </div>
+      </div>
+
     </div>
-    <div class="callout tip"><div class="ch">GitHub Pages Deployment</div><p>Place all .docx files and Trip-Ed HTML in the same folder as this index.html in your GitHub repo. All download links use relative paths and will work automatically once deployed to GitHub Pages.</p></div>
   </div>
 </div>
 <!-- Trip-Ed content stored in <template> — browser does not parse or execute until explicitly activated -->
